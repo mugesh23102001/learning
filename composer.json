@@ -1,0 +1,43 @@
+{
+    "name": "mugesh/calculator",
+    "description": "An example PHP package for Packagist",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mugesh",
+            "email": "your.email@example.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "mugesh\\calculator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "mugesh\\calculator\\Tests\\": "tests/"
+        }
+    },
+    "keywords": [
+        "php",
+        "library",
+        "example",
+        "packagist"
+    ],
+    "homepage": "https://github.com/yourname/example-package",
+    "support": {
+        "issues": "https://github.com/yourname/example-package/issues",
+        "source": "https://github.com/yourname/example-package"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
