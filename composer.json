@@ -1,43 +1,31 @@
 {
     "name": "mugesh/calculator",
-    "description": "An example PHP package for Packagist",
+    "description": "A simple calculator package for PHP",
     "type": "library",
+    "keywords": ["calculator", "math", "arithmetic"],
     "license": "MIT",
     "authors": [
         {
-            "name": "mugesh",
-            "email": "your.email@example.com"
+            "name": "Mugesh",
+            "email": "mugesh@example.com"
         }
     ],
-    "minimum-stability": "stable",
     "require": {
         "php": ">=7.4"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.0"
+        "phpunit/phpunit": "^9.0|^10.0"
     },
     "autoload": {
         "psr-4": {
-            "mugesh\\calculator\\": "src/"
+            "Mugesh\\Calculator\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "mugesh\\calculator\\Tests\\": "tests/"
+            "Mugesh\\Calculator\\Tests\\": "tests/"
         }
     },
-    "keywords": [
-        "php",
-        "library",
-        "example",
-        "packagist"
-    ],
-    "homepage": "https://github.com/yourname/example-package",
-    "support": {
-        "issues": "https://github.com/yourname/example-package/issues",
-        "source": "https://github.com/yourname/example-package"
-    },
-    "scripts": {
-        "test": "phpunit"
-    }
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }

@@ -1,10 +1,7 @@
 <?php
 
-namespace mugesh\calculator;
+namespace Mugesh\Calculator;
 
-/**
- * A simple calculator class for demonstration
- */
 class Calculator
 {
     /**
@@ -70,5 +67,33 @@ class Calculator
     public function percentage(float $value, float $percentage): float
     {
         return ($value * $percentage) / 100;
+    }
+
+    /**
+     * Calculate power
+     *
+     * @param float $base
+     * @param float $exponent
+     * @return float
+     */
+    public function power(float $base, float $exponent): float
+    {
+        return pow($base, $exponent);
+    }
+
+    /**
+     * Calculate square root
+     *
+     * @param float $number
+     * @return float
+     * @throws \InvalidArgumentException
+     */
+    public function sqrt(float $number): float
+    {
+        if ($number < 0) {
+            throw new \InvalidArgumentException('Cannot calculate square root of negative number');
+        }
+        
+        return sqrt($number);
     }
 }

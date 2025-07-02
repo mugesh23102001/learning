@@ -1,68 +1,65 @@
-# Example Package
+# Mugesh Calculator
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/yourname/example-package.svg?style=flat-square)](https://packagist.org/packages/yourname/example-package)
-[![Tests](https://img.shields.io/github/actions/workflow/status/yourname/example-package/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/yourname/example-package/actions/workflows/run-tests.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/yourname/example-package.svg?style=flat-square)](https://packagist.org/packages/yourname/example-package)
-
-An example PHP package that demonstrates basic functionality including a Calculator class and String helper utilities. Perfect for learning how to create and publish PHP packages to Packagist.
+A simple and lightweight calculator package for PHP that provides basic arithmetic operations.
 
 ## Installation
 
-You can install the package via composer:
+You can install this package via Composer:
 
 ```bash
-composer require yourname/example-package
+composer require mugesh/calculator
 ```
 
 ## Usage
 
-### Calculator Class
-
 ```php
-use mugesh\calculator\Calculator;
+<?php
+require_once 'vendor/autoload.php';
 
-$calculator = new Calculator();
+use Mugesh\Calculator\Calculator;
 
-// Basic arithmetic operations
-echo $calculator->add(5, 3);        // 8
-echo $calculator->subtract(10, 4);  // 6  
-echo $calculator->multiply(6, 7);   // 42
-echo $calculator->divide(15, 3);    // 5
+$calc = new Calculator();
 
-// Calculate percentage
-echo $calculator->percentage(200, 15); // 30
+// Basic operations
+echo $calc->add(5, 3);        // 8
+echo $calc->subtract(10, 4);  // 6
+echo $calc->multiply(6, 7);   // 42
+echo $calc->divide(15, 3);    // 5
+
+// Advanced operations
+echo $calc->percentage(200, 15);  // 30 (15% of 200)
+echo $calc->power(2, 8);          // 256
+echo $calc->sqrt(64);             // 8
 ```
 
-### String Helper
+## Available Methods
 
-```php
-use mugesh\calculator\StringHelper;
-
-// Create URL-friendly slugs
-echo StringHelper::slug('Hello World!'); // 'hello-world'
-
-// Truncate strings
-echo StringHelper::truncate('This is a long text', 10); // 'This is a ...'
-
-// Check string prefixes and suffixes
-var_dump(StringHelper::startsWith('Hello World', 'Hello')); // true
-var_dump(StringHelper::endsWith('Hello World', 'World'));   // true
-```
+- `add(float $a, float $b): float` - Addition
+- `subtract(float $a, float $b): float` - Subtraction
+- `multiply(float $a, float $b): float` - Multiplication
+- `divide(float $a, float $b): float` - Division (throws exception for division by zero)
+- `percentage(float $value, float $percentage): float` - Percentage calculation
+- `power(float $base, float $exponent): float` - Power calculation
+- `sqrt(float $number): float` - Square root (throws exception for negative numbers)
 
 ## Testing
 
-Run the tests with:
+Run the test suite:
 
 ```bash
 composer test
 ```
 
-Or run PHPUnit directly:
+Or using PHPUnit directly:
 
 ```bash
 vendor/bin/phpunit
 ```
 
+## Requirements
+
+- PHP 7.4 or higher
+
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+This package is open-sourced software licensed under the [MIT license](LICENSE).

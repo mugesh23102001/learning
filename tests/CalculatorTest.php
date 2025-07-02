@@ -1,65 +1,79 @@
 <?php
 
-namespace mugesh\calculator\Tests;
+namespace Mugesh\Calculator\Tests;
 
 use PHPUnit\Framework\TestCase;
-use mugesh\calculator\Calculator;
+use Mugesh\Calculator\Calculator;
+use InvalidArgumentException;
 
 class CalculatorTest extends TestCase
 {
-    private $calculator;
+    private Calculator $calculator;
 
     protected function setUp(): void
     {
         $this->calculator = new Calculator();
     }
 
-    public function testCanCreateCalculatorInstance()
+    public function testAdd()
     {
-        $this->assertInstanceOf(Calculator::class, $this->calculator);
+        $this->assertEquals(5, $this->calculator->add(2, 3));
+        $this->assertEquals(0, $this->calculator->add(-2, 2));
+        $this->assertEquals(-5, $this->calculator->add(-2, -3));
     }
 
-    public function testCanAddTwoNumbers()
+    public function testSubtract()
     {
-        $result = $this->calculator->add(5, 3);
-        $this->assertEquals(8, $result);
+        $this->assertEquals(2, $this->calculator->subtract(5, 3));
+        $this->assertEquals(-4, $this->calculator->subtract(-2, 2));
+        $this->assertEquals(1, $this->calculator->subtract(-2, -3));
     }
 
-    public function testCanSubtractTwoNumbers()
+    public function testMultiply()
     {
-        $result = $this->calculator->subtract(10, 4);
-        $this->assertEquals(6, $result);
+        $this->assertEquals(15, $this->calculator->multiply(3, 5));
+        $this->assertEquals(0, $this->calculator->multiply(0, 5));
+        $this->assertEquals(6, $this->calculator->multiply(-2, -3));
     }
 
-    public function testCanMultiplyTwoNumbers()
+    public function testDivide()
     {
-        $result = $this->calculator->multiply(6, 7);
-        $this->assertEquals(42, $result);
+        $this->assertEquals(2, $this->calculator->divide(10, 5));
+        $this->assertEquals(2.5, $this->calculator->divide(5, 2));
+        $this->assertEquals(-2, $this->calculator->divide(-10, 5));
     }
 
-    public function testCanDivideTwoNumbers()
+    public function testDivideByZero()
     {
-        $result = $this->calculator->divide(15, 3);
-        $this->assertEquals(5, $result);
-    }
-
-    public function testDivisionByZeroThrowsException()
-    {
-        $this->expectException(\InvalidArgumentException::class);
+        $this->expectException(InvalidArgumentException::class);
         $this->expectExceptionMessage('Division by zero is not allowed');
-        
         $this->calculator->divide(10, 0);
     }
 
-    public function testCanCalculatePercentage()
+    public function testPercentage()
     {
-        $result = $this->calculator->percentage(200, 15);
-        $this->assertEquals(30, $result);
+        $this->assertEquals(20, $this->calculator->percentage(100, 20));
+        $this->assertEquals(15, $this->calculator->percentage(50, 30));
     }
 
-    public function testCanWorkWithFloatingPointNumbers()
+    public function testPower()
     {
-        $result = $this->calculator->add(1.5, 2.3);
-        $this->assertEquals(3.8, $result);
+        $this->assertEquals(8, $this->calculator->power(2, 3));
+        $this->assertEquals(1, $this->calculator->power(5, 0));
+        $this->assertEquals(0.25, $this->calculator->power(2, -2));
+    }
+
+    public function testSqrt()
+    {
+        $this->assertEquals(3, $this->calculator->sqrt(9));
+        $this->assertEquals(5, $this->calculator->sqrt(25));
+        $this->assertEquals(0, $this->calculator->sqrt(0));
+    }
+
+    public function testSqrtNegativeNumber()
+    {
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('Cannot calculate square root of negative number');
+        $this->calculator->sqrt(-4);
     }
 }
