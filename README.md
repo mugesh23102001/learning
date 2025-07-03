@@ -7,12 +7,12 @@
 [![PHP Version Required](https://img.shields.io/packagist/php-v/mugesh/calculator.svg?style=flat-square)](https://packagist.org/packages/mugesh/calculator)
 [![License on Packagist](https://img.shields.io/packagist/l/mugesh/calculator.svg?style=flat-square)](https://packagist.org/packages/mugesh/calculator)
 
-[![Build Status](https://github.com/mugesh/calculator/actions/workflows/test.yml/badge.svg)](https://github.com/mugesh/calculator/actions)
-[![Last Commit](https://img.shields.io/github/last-commit/mugesh/calculator.svg?style=flat-square)](https://github.com/mugesh/calculator/commits)
-[![Open Issues](https://img.shields.io/github/issues/mugesh/calculator.svg?style=flat-square)](https://github.com/mugesh/calculator/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/mugesh/calculator.svg?style=flat-square)](https://github.com/mugesh/calculator/pulls)
-[![GitHub Stars](https://img.shields.io/github/stars/mugesh/calculator.svg?style=flat-square)](https://github.com/mugesh/calculator/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/mugesh/calculator.svg?style=flat-square)](https://github.com/mugesh/calculator/network)
+[![Build Status](https://github.com/mugesh23102001/learning/actions/workflows/test.yml/badge.svg)](https://github.com/mugesh23102001/learning/actions)
+[![Last Commit](https://img.shields.io/github/last-commit/mugesh23102001/learning.svg?style=flat-square)](https://github.com/mugesh23102001/learning/commits)
+[![Open Issues](https://img.shields.io/github/issues/mugesh23102001/learning.svg?style=flat-square)](https://github.com/mugesh23102001/learning/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/mugesh23102001/learning.svg?style=flat-square)](https://github.com/mugesh23102001/learning/pulls)
+[![GitHub Stars](https://img.shields.io/github/stars/mugesh23102001/learning.svg?style=flat-square)](https://github.com/mugesh23102001/learning/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/mugesh23102001/learning.svg?style=flat-square)](https://github.com/mugesh23102001/learning/network)
 
 
 # Mugesh Calculator
