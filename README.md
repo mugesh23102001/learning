@@ -1,11 +1,19 @@
 # Mugesh Calculator
 
-[![Latest Version](https://img.shields.io/packagist/v/mugesh/calculator.svg?style=flat-square)](https://packagist.org/packages/mugesh/calculator)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mugesh/calculator.svg?style=flat-square)](https://packagist.org/packages/mugesh/calculator)
 [![Total Downloads](https://img.shields.io/packagist/dt/mugesh/calculator.svg?style=flat-square)](https://packagist.org/packages/mugesh/calculator)
 [![Monthly Downloads](https://img.shields.io/packagist/dm/mugesh/calculator.svg?style=flat-square)](https://packagist.org/packages/mugesh/calculator)
 [![Daily Downloads](https://img.shields.io/packagist/dd/mugesh/calculator.svg?style=flat-square)](https://packagist.org/packages/mugesh/calculator)
-[![PHP Version](https://img.shields.io/packagist/php-v/mugesh/calculator.svg?style=flat-square)](https://packagist.org/packages/mugesh/calculator)
-[![License](https://img.shields.io/packagist/l/mugesh/calculator.svg?style=flat-square)](https://packagist.org/packages/mugesh/calculator)
+[![PHP Version Required](https://img.shields.io/packagist/php-v/mugesh/calculator.svg?style=flat-square)](https://packagist.org/packages/mugesh/calculator)
+[![License on Packagist](https://img.shields.io/packagist/l/mugesh/calculator.svg?style=flat-square)](https://packagist.org/packages/mugesh/calculator)
+
+[![Build Status](https://github.com/mugesh/calculator/actions/workflows/test.yml/badge.svg)](https://github.com/mugesh/calculator/actions)
+[![Last Commit](https://img.shields.io/github/last-commit/mugesh/calculator.svg?style=flat-square)](https://github.com/mugesh/calculator/commits)
+[![Open Issues](https://img.shields.io/github/issues/mugesh/calculator.svg?style=flat-square)](https://github.com/mugesh/calculator/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/mugesh/calculator.svg?style=flat-square)](https://github.com/mugesh/calculator/pulls)
+[![GitHub Stars](https://img.shields.io/github/stars/mugesh/calculator.svg?style=flat-square)](https://github.com/mugesh/calculator/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/mugesh/calculator.svg?style=flat-square)](https://github.com/mugesh/calculator/network)
+
 
 # Mugesh Calculator
 
