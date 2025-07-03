@@ -1,7 +1,7 @@
 # Example Package
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/yourname/example-package.svg?style=flat-square)](https://packagist.org/packages/mugesh/calculator)
-[![Total Downloads](https://img.shields.io/packagist/dt/yourname/example-package.svg?style=flat-square)](https://packagist.org/packages/mugesh/calculator)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mugesh/calculator.svg?style=flat-square)](https://packagist.org/packages/mugesh/calculator)
+[![Total Downloads](https://img.shields.io/packagist/dt/mugesh/calculator.svg?style=flat-square)](https://packagist.org/packages/mugesh/calculator)
 # Mugesh Calculator
 
 A simple and lightweight calculator package for PHP that provides basic arithmetic operations.
